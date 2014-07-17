@@ -5,6 +5,7 @@
 #include "SCOMM.h"
 #include "SCOMMDlg.h"
 
+
 #pragma warning( disable : 4996 ) 
 
 #ifdef _DEBUG

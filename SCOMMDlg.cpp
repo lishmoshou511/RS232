@@ -6,6 +6,7 @@
 #include "SCOMMDlg.h"
 #include "io.h"
 #include "math.h"
+#include "MyDialog.h"
 
 
 #pragma warning( disable : 4996 ) 
@@ -909,7 +910,7 @@ void CSCOMMDlg::OnButtonSavedata()
 		return;
 	}
 	CTime t = CTime::GetCurrentTime();
-	CString str=t.Format("%Y年%m月%d日%H时%M分%S秒\r\n");
+	CString str=t.Format("%Y-%m-%d %H-%M-%S-\r\n");
 	m_rFile.Write((LPCTSTR)str,str.GetLength());
 	m_rFile.Write((LPCTSTR)m_ReceiveData,m_ReceiveData.GetLength());
 	m_rFile.Flush();
@@ -1095,7 +1096,13 @@ void CSCOMMDlg::OnDestroy()
 
 void CSCOMMDlg::OnButtonHelp() 
 {
+
+	MyDialog myDialog;
+	myDialog.DoModal();
 	// TODO: Add your control notification handler code here
+
+	/*
+	
 	TCHAR exeFullPath[MAX_PATH]; 
 	GetModuleFileName(NULL,exeFullPath,MAX_PATH);
 	CString strlpPath;
@@ -1103,6 +1110,9 @@ void CSCOMMDlg::OnButtonHelp()
 	strlpPath.MakeUpper();
 	strlpPath.Replace("串口调试助手V2.2.EXE","");
 	ShellExecute(NULL,NULL,_T("help.htm"),NULL,strlpPath,SW_SHOW);
+	
+	*/
+	
 }
 
 
