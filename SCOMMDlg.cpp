@@ -67,15 +67,7 @@ void CAboutDlg::DoDataExchange(CDataExchange* pDX)
 BOOL CAboutDlg::OnInitDialog() 
 {
 	CDialog::OnInitDialog();
-	
-	// TODO: Add extra initialization here
-	m_ctrlHyperLink1.SetURL(_T("mailto:webmaster@gjwtech.com"));
-	m_ctrlHyperLink1.SetUnderline(TRUE);
-	m_ctrlHyperLink1.SetLinkCursor(AfxGetApp()->LoadCursor(IDC_CURSOR_HAND));
 
-	m_ctrlHyperLinkWWWXFS.SetURL(_T("http://www.gjwtech.com"));
-	m_ctrlHyperLinkWWWXFS.SetUnderline(TRUE);
-	m_ctrlHyperLinkWWWXFS.SetLinkCursor(AfxGetApp()->LoadCursor(IDC_CURSOR_HAND));
 	
 	return TRUE;  // return TRUE unless you set the focus to a control
 	              // EXCEPTION: OCX Property Pages should return FALSE
