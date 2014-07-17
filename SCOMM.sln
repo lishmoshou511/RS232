@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SCOMM", "SCOMM.vcxproj", "{DCCAFE5A-64EC-40A1-B2FA-3526E1DCECC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCCAFE5A-64EC-40A1-B2FA-3526E1DCECC1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DCCAFE5A-64EC-40A1-B2FA-3526E1DCECC1}.Debug|Win32.Build.0 = Debug|Win32
+		{DCCAFE5A-64EC-40A1-B2FA-3526E1DCECC1}.Release|Win32.ActiveCfg = Release|Win32
+		{DCCAFE5A-64EC-40A1-B2FA-3526E1DCECC1}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
