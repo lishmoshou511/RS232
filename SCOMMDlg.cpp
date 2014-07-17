@@ -6,7 +6,6 @@
 #include "SCOMMDlg.h"
 #include "io.h"
 #include "math.h"
-#include "MyDialog.h"
 
 
 #pragma warning( disable : 4996 ) 
@@ -274,10 +273,10 @@ BOOL CSCOMMDlg::OnInitDialog()
 	strText.Format("%d",m_nCycleTime);
 	pEdit->SetWindowText(strText);   //Display cycle time
 
-	m_strSendData="http://www.gjwtech.com";
-	char cr=13,lf=10;;
-	m_strSendData = m_strSendData + cr;
-	m_strSendData = m_strSendData + lf;
+	m_strSendData="welcome to lishuang's software!";
+	//char cr=13,lf=10;;
+	//m_strSendData = m_strSendData + cr;
+	//m_strSendData = m_strSendData + lf;
 
 
 	m_ctrlAutoClear.SetCheck(1);
@@ -1097,8 +1096,6 @@ void CSCOMMDlg::OnDestroy()
 void CSCOMMDlg::OnButtonHelp() 
 {
 
-	MyDialog myDialog;
-	myDialog.DoModal();
 	// TODO: Add your control notification handler code here
 
 	/*

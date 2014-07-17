@@ -17,7 +17,6 @@
 #define IDB_UNPINNED_BITMAP             143
 #define IDB_ANIM_IMGLIST                144
 #define IDI_ICON_GJWTECH                145
-#define IDD_DIALOG1                     146
 #define IDC_COMBO_COMSELECT             1000
 #define IDC_COMBO_SPEED                 1001
 #define IDC_STATIC_STATUS               1004

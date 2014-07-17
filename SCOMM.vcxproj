@@ -133,7 +133,6 @@
   <ItemGroup>
     <ClCompile Include="AnimateDlgIcon.cpp" />
     <ClCompile Include="HYPERLINK.CPP" />
-    <ClCompile Include="MyDialog.cpp" />
     <ClCompile Include="PushPin.cpp" />
     <ClCompile Include="SCOMM.cpp" />
     <ClCompile Include="SCOMMDlg.cpp" />
@@ -150,7 +149,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimateDlgIcon.h" />
-    <ClInclude Include="MyDialog.h" />
     <ClInclude Include="PushPin.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SCOMM.h" />
