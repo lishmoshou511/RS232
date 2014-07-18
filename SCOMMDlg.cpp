@@ -177,6 +177,8 @@ BEGIN_MESSAGE_MAP(CSCOMMDlg, CDialog)
 	ON_BN_CLICKED(IDC_BUTTON_HELP, OnButtonHelp)
 	//}}AFX_MSG_MAP
 	ON_CBN_SELCHANGE(IDC_COMBO_SPEED, &CSCOMMDlg::OnCbnSelchangeComboSpeed)
+	ON_BN_CLICKED(IDC_BUTTON2, &CSCOMMDlg::OnBnClickedButton2)
+	ON_BN_CLICKED(IDC_BUTTON3, &CSCOMMDlg::OnBnClickedButton3)
 END_MESSAGE_MAP()
 /*
 BEGIN_DYNAMIC_MAP(CSCOMMDlg,CDialog)
@@ -1116,4 +1118,53 @@ void CSCOMMDlg::OnButtonHelp()
 void CSCOMMDlg::OnCbnSelchangeComboSpeed()
 {
 	// TODO:  在此添加控件通知处理程序代码
+}
+
+
+//电机1的发送按钮
+void CSCOMMDlg::OnBnClickedButton2()
+{
+	// TODO: Add your control notification handler code here
+	if (m_Port.m_hComm == NULL)
+	{
+		m_ctrlAutoSend.SetCheck(0);
+		AfxMessageBox("串口没有打开，请打开串口");
+		return;
+	}
+	else
+	{
+		UpdateData(TRUE);
+
+		CString motorMsg = CString("m");
+		m_Port.WriteToPort((LPCTSTR)motorMsg);	//发送数据
+		TX_count += motorMsg.GetLength();
+
+		CString strTemp;
+		strTemp.Format("TX:%d", TX_count);
+		m_ctrlTXCount.SetWindowText(strTemp);
+	}
+}
+
+//电机2的发送按钮
+void CSCOMMDlg::OnBnClickedButton3()
+{
+	// TODO: Add your control notification handler code here
+	if (m_Port.m_hComm == NULL)
+	{
+		m_ctrlAutoSend.SetCheck(0);
+		AfxMessageBox("串口没有打开，请打开串口");
+		return;
+	}
+	else
+	{
+		UpdateData(TRUE);
+
+		CString motorMsg = CString("r");
+		m_Port.WriteToPort((LPCTSTR)motorMsg);	//发送数据
+		TX_count += motorMsg.GetLength();
+
+		CString strTemp;
+		strTemp.Format("TX:%d", TX_count);
+		m_ctrlTXCount.SetWindowText(strTemp);
+	}
 }
